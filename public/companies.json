@@ -1,0 +1,602 @@
+[
+  {
+    "id": "1",
+    "name": "Google",
+    "logo": "https://logo.clearbit.com/google.com",
+    "location": "Mountain View, California, USA",
+    "website": "https://google.com",
+    "industry": "Technology & Search",
+    "jobs": [
+      {
+        "id": "job-001",
+        "title": "Senior Frontend Developer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Frontend+Developer",
+        "location": "Mountain View, CA (Hybrid)",
+        "salary": "$140,000–$180,000 per year",
+        "jobType": "Full-time",
+        "description": "Join our team to build next-generation web applications using modern frameworks and cutting-edge technologies.",
+        "requirements": [
+          "Proficient in HTML, CSS, and JavaScript (ES6+)",
+          "Experience with React or Angular",
+          "Familiarity with RESTful APIs and GraphQL",
+          "Good understanding of responsive design",
+          "Excellent problem-solving skills"
+        ]
+      },
+      {
+        "id": "job-002",
+        "title": "Machine Learning Engineer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=ML+Engineer",
+        "location": "Mountain View, CA (On-site)",
+        "salary": "$160,000–$220,000 per year",
+        "jobType": "Full-time",
+        "description": "Develop and deploy machine learning models at scale to improve search and recommendation systems.",
+        "requirements": [
+          "PhD or Master's in Computer Science or related field",
+          "Strong experience with TensorFlow or PyTorch",
+          "Proficiency in Python and data structures",
+          "Experience with large-scale data processing",
+          "Published research in ML/AI is a plus"
+        ]
+      },
+      {
+        "id": "job-003",
+        "title": "Technical Program Manager",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Program+Manager",
+        "location": "Mountain View, CA (Hybrid)",
+        "salary": "$130,000–$170,000 per year",
+        "jobType": "Full-time",
+        "description": "Lead cross-functional teams to deliver complex technical projects on time and within scope.",
+        "requirements": [
+          "5+ years of technical program management experience",
+          "Strong understanding of software development lifecycle",
+          "Excellent communication and leadership skills",
+          "Experience with Agile methodologies",
+          "Bachelor's degree in Computer Science or equivalent"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Microsoft",
+    "logo": "https://logo.clearbit.com/microsoft.com",
+    "location": "Redmond, Washington, USA",
+    "website": "https://microsoft.com",
+    "industry": "Software & Cloud Services",
+    "jobs": [
+      {
+        "id": "job-004",
+        "title": "Cloud Solutions Architect",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Cloud+Architect",
+        "location": "Redmond, WA (Remote)",
+        "salary": "$150,000–$200,000 per year",
+        "jobType": "Full-time",
+        "description": "Design and implement scalable cloud solutions on Azure for enterprise clients worldwide.",
+        "requirements": [
+          "5+ years experience with cloud platforms",
+          "Deep knowledge of Azure services and architecture",
+          "Experience with microservices and containerization",
+          "Strong communication and client-facing skills",
+          "Azure certifications preferred"
+        ]
+      },
+      {
+        "id": "job-005",
+        "title": "Software Engineer II",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Software+Engineer",
+        "location": "Redmond, WA (Hybrid)",
+        "salary": "$120,000–$160,000 per year",
+        "jobType": "Full-time",
+        "description": "Build innovative features for Microsoft 365 products used by millions of users daily.",
+        "requirements": [
+          "Strong coding skills in C#, Java, or C++",
+          "Experience with distributed systems",
+          "Knowledge of data structures and algorithms",
+          "Bachelor's degree in Computer Science",
+          "Passion for building reliable software"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Amazon",
+    "logo": "https://logo.clearbit.com/amazon.com",
+    "location": "Seattle, Washington, USA",
+    "website": "https://amazon.com",
+    "industry": "E-commerce & Cloud Computing",
+    "jobs": [
+      {
+        "id": "job-006",
+        "title": "Software Development Engineer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=SDE",
+        "location": "Seattle, WA (On-site)",
+        "salary": "$120,000–$160,000 per year",
+        "jobType": "Full-time",
+        "description": "Build and maintain distributed systems that power Amazon's global e-commerce platform.",
+        "requirements": [
+          "Strong programming skills in Java, C++, or Python",
+          "Experience with distributed systems and databases",
+          "Knowledge of data structures and algorithms",
+          "Bachelor's degree in Computer Science or related field",
+          "Experience with AWS services is a plus"
+        ]
+      },
+      {
+        "id": "job-007",
+        "title": "Data Scientist",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Data+Scientist",
+        "location": "Seattle, WA (Hybrid)",
+        "salary": "$130,000–$180,000 per year",
+        "jobType": "Full-time",
+        "description": "Apply advanced analytics and machine learning to solve complex business problems.",
+        "requirements": [
+          "Master's or PhD in Statistics, Math, or related field",
+          "Strong programming skills in Python or R",
+          "Experience with SQL and big data technologies",
+          "Knowledge of ML algorithms and statistical modeling",
+          "Excellent data visualization skills"
+        ]
+      },
+      {
+        "id": "job-008",
+        "title": "DevOps Engineer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=DevOps+Engineer",
+        "location": "Seattle, WA (On-site)",
+        "salary": "$125,000–$165,000 per year",
+        "jobType": "Full-time",
+        "description": "Build and maintain infrastructure automation tools for AWS services.",
+        "requirements": [
+          "Experience with CI/CD pipelines and automation",
+          "Strong knowledge of AWS services",
+          "Proficiency in scripting languages (Python, Bash)",
+          "Experience with Docker and Kubernetes",
+          "Understanding of networking and security"
+        ]
+      },
+      {
+        "id": "job-009",
+        "title": "UX Researcher",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=UX+Researcher",
+        "location": "Seattle, WA (Hybrid)",
+        "salary": "$110,000–$145,000 per year",
+        "jobType": "Full-time",
+        "description": "Conduct user research to inform product design decisions across Amazon's platforms.",
+        "requirements": [
+          "3+ years of UX research experience",
+          "Strong qualitative and quantitative research skills",
+          "Experience with usability testing and surveys",
+          "Excellent communication and presentation skills",
+          "Master's degree in HCI or related field preferred"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Meta",
+    "logo": "https://logo.clearbit.com/meta.com",
+    "location": "Menlo Park, California, USA",
+    "website": "https://meta.com",
+    "industry": "Social Media & Technology",
+    "jobs": [
+      {
+        "id": "job-010",
+        "title": "Mobile Engineer (React Native)",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Mobile+Engineer",
+        "location": "Menlo Park, CA (Hybrid)",
+        "salary": "$130,000–$170,000 per year",
+        "jobType": "Full-time",
+        "description": "Develop cross-platform mobile applications used by billions of people around the world.",
+        "requirements": [
+          "Expert knowledge of React Native",
+          "Experience with iOS and Android development",
+          "Strong understanding of mobile UI/UX principles",
+          "Experience with performance optimization",
+          "Passion for building user-centric products"
+        ]
+      },
+      {
+        "id": "job-011",
+        "title": "AR/VR Software Engineer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=AR+VR+Engineer",
+        "location": "Menlo Park, CA (On-site)",
+        "salary": "$145,000–$190,000 per year",
+        "jobType": "Full-time",
+        "description": "Build immersive experiences for Meta's Reality Labs products including Quest and Ray-Ban Stories.",
+        "requirements": [
+          "Strong C++ programming skills",
+          "Experience with 3D graphics and rendering",
+          "Knowledge of Unity or Unreal Engine",
+          "Understanding of computer vision algorithms",
+          "Experience with VR/AR hardware is a plus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Netflix",
+    "logo": "https://logo.clearbit.com/netflix.com",
+    "location": "Los Gatos, California, USA",
+    "website": "https://netflix.com",
+    "industry": "Entertainment & Streaming",
+    "jobs": [
+      {
+        "id": "job-012",
+        "title": "Data Engineer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Data+Engineer",
+        "location": "Los Gatos, CA (Hybrid)",
+        "salary": "$140,000–$190,000 per year",
+        "jobType": "Full-time",
+        "description": "Build and maintain data pipelines that power personalization and recommendations for our streaming platform.",
+        "requirements": [
+          "Strong experience with Spark, Kafka, or similar tools",
+          "Proficiency in Python, Scala, or Java",
+          "Experience with data warehousing and ETL processes",
+          "Knowledge of SQL and NoSQL databases",
+          "Experience with cloud platforms (AWS/GCP)"
+        ]
+      },
+      {
+        "id": "job-013",
+        "title": "Content Operations Manager",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Operations+Manager",
+        "location": "Los Gatos, CA (On-site)",
+        "salary": "$95,000–$130,000 per year",
+        "jobType": "Full-time",
+        "description": "Manage content delivery workflows and ensure seamless streaming experience for global users.",
+        "requirements": [
+          "3+ years of operations or project management experience",
+          "Strong analytical and problem-solving skills",
+          "Experience with workflow automation tools",
+          "Excellent communication skills",
+          "Media or entertainment industry experience preferred"
+        ]
+      },
+      {
+        "id": "job-014",
+        "title": "Backend Engineer - Streaming",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Backend+Engineer",
+        "location": "Los Gatos, CA (Hybrid)",
+        "salary": "$135,000–$185,000 per year",
+        "jobType": "Full-time",
+        "description": "Optimize video streaming infrastructure to deliver high-quality content to millions globally.",
+        "requirements": [
+          "Strong experience with Java or Node.js",
+          "Knowledge of CDN and video streaming protocols",
+          "Experience with microservices architecture",
+          "Understanding of distributed systems",
+          "Experience with monitoring and observability tools"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Apple",
+    "logo": "https://logo.clearbit.com/apple.com",
+    "location": "Cupertino, California, USA",
+    "website": "https://apple.com",
+    "industry": "Consumer Electronics & Software",
+    "jobs": [
+      {
+        "id": "job-015",
+        "title": "iOS Software Engineer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=iOS+Engineer",
+        "location": "Cupertino, CA (On-site)",
+        "salary": "$150,000–$200,000 per year",
+        "jobType": "Full-time",
+        "description": "Create innovative features for iOS that delight millions of users worldwide.",
+        "requirements": [
+          "Expertise in Swift and Objective-C",
+          "Deep understanding of iOS frameworks and UIKit",
+          "Experience with SwiftUI is a plus",
+          "Strong computer science fundamentals",
+          "Passion for creating exceptional user experiences"
+        ]
+      },
+      {
+        "id": "job-016",
+        "title": "Hardware Engineer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Hardware+Engineer",
+        "location": "Cupertino, CA (On-site)",
+        "salary": "$140,000–$195,000 per year",
+        "jobType": "Full-time",
+        "description": "Design and develop cutting-edge hardware for Apple's next-generation products.",
+        "requirements": [
+          "BS/MS in Electrical Engineering or related field",
+          "Experience with circuit design and PCB layout",
+          "Knowledge of signal integrity and power design",
+          "Proficiency with design tools (Altium, Cadence)",
+          "Strong debugging and problem-solving skills"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Spotify",
+    "logo": "https://logo.clearbit.com/spotify.com",
+    "location": "Stockholm, Sweden",
+    "website": "https://spotify.com",
+    "industry": "Music Streaming",
+    "jobs": [
+      {
+        "id": "job-017",
+        "title": "Backend Engineer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Backend+Engineer",
+        "location": "Stockholm (Remote)",
+        "salary": "€70,000–€95,000 per year",
+        "jobType": "Full-time",
+        "description": "Build scalable backend services that deliver music to over 500 million users globally.",
+        "requirements": [
+          "Strong experience with Java, Python, or Go",
+          "Knowledge of microservices architecture",
+          "Experience with distributed systems and message queues",
+          "Familiarity with PostgreSQL and Redis",
+          "Understanding of API design best practices"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Adobe",
+    "logo": "https://logo.clearbit.com/adobe.com",
+    "location": "San Jose, California, USA",
+    "website": "https://adobe.com",
+    "industry": "Creative Software",
+    "jobs": [
+      {
+        "id": "job-018",
+        "title": "UI/UX Designer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=UI+UX+Designer",
+        "location": "San Jose, CA (Hybrid)",
+        "salary": "$110,000–$145,000 per year",
+        "jobType": "Full-time",
+        "description": "Design intuitive and beautiful user interfaces for Adobe's suite of creative tools.",
+        "requirements": [
+          "Expert in Figma, Adobe XD, and Illustrator",
+          "Strong portfolio showcasing web and mobile design",
+          "Understanding of design systems and accessibility",
+          "Ability to collaborate with cross-functional teams",
+          "Experience with user research and testing"
+        ]
+      },
+      {
+        "id": "job-019",
+        "title": "Product Marketing Manager",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Product+Marketing",
+        "location": "San Jose, CA (Hybrid)",
+        "salary": "$105,000–$140,000 per year",
+        "jobType": "Full-time",
+        "description": "Drive go-to-market strategy and positioning for Adobe Creative Cloud products.",
+        "requirements": [
+          "5+ years of product marketing experience",
+          "Strong understanding of creative software market",
+          "Excellent written and verbal communication",
+          "Experience with competitive analysis",
+          "Data-driven approach to decision making"
+        ]
+      },
+      {
+        "id": "job-020",
+        "title": "Quality Assurance Engineer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=QA+Engineer",
+        "location": "San Jose, CA (On-site)",
+        "salary": "$90,000–$125,000 per year",
+        "jobType": "Full-time",
+        "description": "Ensure quality and reliability of Adobe's flagship creative applications.",
+        "requirements": [
+          "3+ years of software testing experience",
+          "Experience with automated testing frameworks",
+          "Knowledge of Selenium, Appium, or similar tools",
+          "Strong attention to detail",
+          "Familiarity with Adobe products is a plus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Airbnb",
+    "logo": "https://logo.clearbit.com/airbnb.com",
+    "location": "San Francisco, California, USA",
+    "website": "https://airbnb.com",
+    "industry": "Travel & Hospitality",
+    "jobs": [
+      {
+        "id": "job-021",
+        "title": "Full Stack Engineer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Full+Stack+Engineer",
+        "location": "San Francisco, CA (Hybrid)",
+        "salary": "$145,000–$185,000 per year",
+        "jobType": "Full-time",
+        "description": "Build end-to-end features for the world's largest marketplace for unique stays and experiences.",
+        "requirements": [
+          "Proficiency in React and Node.js",
+          "Experience with Ruby on Rails or similar frameworks",
+          "Strong knowledge of RESTful APIs and GraphQL",
+          "Experience with relational and NoSQL databases",
+          "Understanding of web performance optimization"
+        ]
+      },
+      {
+        "id": "job-022",
+        "title": "Trust & Safety Specialist",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Trust+Safety",
+        "location": "San Francisco, CA (Hybrid)",
+        "salary": "$75,000–$100,000 per year",
+        "jobType": "Full-time",
+        "description": "Protect Airbnb community by investigating and resolving trust and safety issues.",
+        "requirements": [
+          "2+ years in trust & safety or customer support",
+          "Strong analytical and investigation skills",
+          "Excellent judgment and decision-making ability",
+          "Experience with case management systems",
+          "Multilingual abilities are a plus"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Slack",
+    "logo": "https://logo.clearbit.com/slack.com",
+    "location": "San Francisco, California, USA",
+    "website": "https://slack.com",
+    "industry": "Communication & Collaboration",
+    "jobs": [
+      {
+        "id": "job-023",
+        "title": "DevOps Engineer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=DevOps+Engineer",
+        "location": "San Francisco, CA (Remote)",
+        "salary": "$135,000–$175,000 per year",
+        "jobType": "Full-time",
+        "description": "Manage and optimize infrastructure to ensure Slack runs reliably for millions of daily active users.",
+        "requirements": [
+          "Experience with Kubernetes and Docker",
+          "Strong knowledge of AWS or GCP",
+          "Proficiency in infrastructure-as-code (Terraform, Ansible)",
+          "Experience with CI/CD pipelines",
+          "Strong scripting skills in Python or Bash"
+        ]
+      },
+      {
+        "id": "job-024",
+        "title": "Customer Success Manager",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Customer+Success",
+        "location": "San Francisco, CA (Hybrid)",
+        "salary": "$85,000–$115,000 per year",
+        "jobType": "Full-time",
+        "description": "Help enterprise customers maximize value from Slack and drive product adoption.",
+        "requirements": [
+          "3+ years in customer success or account management",
+          "Strong relationship building skills",
+          "Experience with SaaS products",
+          "Excellent presentation and communication skills",
+          "Understanding of enterprise workflows"
+        ]
+      },
+      {
+        "id": "job-025",
+        "title": "Security Engineer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Security+Engineer",
+        "location": "San Francisco, CA (Remote)",
+        "salary": "$140,000–$180,000 per year",
+        "jobType": "Full-time",
+        "description": "Protect Slack's infrastructure and user data through robust security practices.",
+        "requirements": [
+          "Strong knowledge of security best practices",
+          "Experience with penetration testing and vulnerability assessment",
+          "Understanding of encryption and authentication",
+          "Familiarity with compliance standards (SOC2, ISO)",
+          "Programming skills in Python or Go"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Shopify",
+    "logo": "https://logo.clearbit.com/shopify.com",
+    "location": "Ottawa, Ontario, Canada",
+    "website": "https://shopify.com",
+    "industry": "E-commerce Platform",
+    "jobs": [
+      {
+        "id": "job-026",
+        "title": "Product Manager",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Product+Manager",
+        "location": "Ottawa, ON (Remote)",
+        "salary": "CAD $120,000–$160,000 per year",
+        "jobType": "Full-time",
+        "description": "Lead product strategy and development for features that empower entrepreneurs worldwide.",
+        "requirements": [
+          "3+ years of product management experience",
+          "Strong analytical and data-driven decision-making skills",
+          "Experience working with engineering and design teams",
+          "Understanding of e-commerce and online retail",
+          "Excellent communication and stakeholder management"
+        ]
+      },
+      {
+        "id": "job-027",
+        "title": "Merchant Support Advisor",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Support+Advisor",
+        "location": "Ottawa, ON (Remote)",
+        "salary": "CAD $45,000–$60,000 per year",
+        "jobType": "Full-time",
+        "description": "Provide exceptional support to Shopify merchants via chat, email, and phone.",
+        "requirements": [
+          "Strong customer service skills",
+          "Basic understanding of e-commerce",
+          "Excellent written and verbal communication",
+          "Problem-solving mindset",
+          "Willingness to work flexible shifts"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Salesforce",
+    "logo": "https://logo.clearbit.com/salesforce.com",
+    "location": "San Francisco, California, USA",
+    "website": "https://salesforce.com",
+    "industry": "CRM & Enterprise Software",
+    "jobs": [
+      {
+        "id": "job-028",
+        "title": "Salesforce Developer",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Salesforce+Developer",
+        "location": "San Francisco, CA (Hybrid)",
+        "salary": "$110,000–$150,000 per year",
+        "jobType": "Full-time",
+        "description": "Develop custom solutions on the Salesforce platform to meet enterprise client needs.",
+        "requirements": [
+          "Strong knowledge of Apex, Visualforce, and Lightning Web Components",
+          "Experience with Salesforce configuration and customization",
+          "Understanding of integration patterns and APIs",
+          "Salesforce certifications (Platform Developer I/II)",
+          "Experience with Agile development methodologies"
+        ]
+      },
+      {
+        "id": "job-029",
+        "title": "Solution Architect",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Solution+Architect",
+        "location": "San Francisco, CA (Hybrid)",
+        "salary": "$145,000–$190,000 per year",
+        "jobType": "Full-time",
+        "description": "Design end-to-end Salesforce solutions for complex enterprise requirements.",
+        "requirements": [
+          "8+ years of Salesforce experience",
+          "Multiple Salesforce certifications including Architect credentials",
+          "Deep understanding of Salesforce ecosystem",
+          "Strong client-facing and presentation skills",
+          "Experience with multi-cloud implementations"
+        ]
+      },
+      {
+        "id": "job-030",
+        "title": "Business Analyst",
+        "bannerImage": "https://via.placeholder.com/1200x400.png?text=Business+Analyst",
+        "location": "San Francisco, CA (Remote)",
+        "salary": "$90,000–$120,000 per year",
+        "jobType": "Full-time",
+        "description": "Bridge business needs and technical solutions for Salesforce implementations.",
+        "requirements": [
+          "3+ years as Business Analyst in CRM projects",
+          "Strong requirements gathering and documentation skills",
+          "Understanding of business processes and workflows",
+          "Salesforce Admin certification preferred",
+          "Excellent stakeholder management abilities"
+        ]
+      }
+    ]
+  }
+]
