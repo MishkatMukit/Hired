@@ -7,6 +7,8 @@ import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Login from '../Components/AuthComponents/Login';
 import Register from '../Components/AuthComponents/Register';
 import Loading from '../Components/Loading/Loading';
+import Dashboard from '../Pages/Dashboard';
+import Blogs from '../Pages/Blogs';
 
 
 const router = createBrowserRouter([
@@ -23,7 +25,8 @@ const router = createBrowserRouter([
             },
             {
                 path:"/blogs",
-                element: <h1>this is blogs page</h1>
+                element: <Blogs/>,
+                loader: ()=>fetch("/blogs.json")
             },
             {
                 path:"/companyDetails/:id",
@@ -41,7 +44,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/dashboard",
-                element: <h1>this is dashboard page</h1>
+                element: <PrivateRoute><Dashboard/></PrivateRoute>
             }
         ]
     }

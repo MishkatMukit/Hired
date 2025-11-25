@@ -1,0 +1,43 @@
+
+[
+    {
+      "id": 1,
+      "question": "What is useState and how does it work in React?",
+      "answer": "useState is a React Hook that lets you add state to functional components. It returns an array with two elements: the current state value and a function to update it. Syntax: const [state, setState] = useState(initialValue). When you call setState, React re-renders the component with the new state value. Unlike class components, useState doesn't merge objects automatically - you must spread the old state if updating objects.",
+      "category": "Hooks",
+      "difficulty": "Beginner",
+      "codeExample": "const [count, setCount] = useState(0);\nconst increment = () => setCount(count + 1);"
+    },
+    {
+      "id": 2,
+      "question": "What is the purpose of useEffect in React?",
+      "answer": "useEffect is a Hook that performs side effects in functional components. It runs after every render by default, but you can control when it runs using a dependency array. Common uses include data fetching, subscriptions, DOM manipulation, and timers. It accepts two arguments: a callback function and an optional dependency array. Empty array [] runs once on mount, no array runs on every render, and [dependencies] runs when dependencies change. You can return a cleanup function that runs before the component unmounts or before the effect runs again.",
+      "category": "Hooks",
+      "difficulty": "Beginner",
+      "codeExample": "useEffect(() => {\n  fetch('/api/data')\n    .then(res => res.json())\n    .then(data => setData(data));\n}, []); // Runs once on mount"
+    },
+    {
+      "id": 3,
+      "question": "What is a custom hook in React and when should you use one?",
+      "answer": "A custom hook is a JavaScript function whose name starts with 'use' and that may call other hooks. It lets you extract component logic into reusable functions. Use custom hooks when you have stateful logic that needs to be shared across multiple components, or to simplify complex components by extracting logic. Unlike regular functions, custom hooks can use React hooks inside them. They're perfect for encapsulating common patterns like data fetching, form handling, subscriptions, or animations.",
+      "category": "Hooks",
+      "difficulty": "Intermediate",
+      "codeExample": "function useLocalStorage(key, initialValue) {\n  const [value, setValue] = useState(() => {\n    return localStorage.getItem(key) || initialValue;\n  });\n  \n  useEffect(() => {\n    localStorage.setItem(key, value);\n  }, [key, value]);\n  \n  return [value, setValue];\n}"
+    },
+    {
+      "id": 4,
+      "question": "Difference between controlled and uncontrolled components? Which one is better?",
+      "answer": "Controlled components have their form data handled by React state. The input value is controlled by state, and changes trigger state updates via onChange handlers. Uncontrolled components store their data in the DOM itself, accessed via refs. Controlled components are generally better because they give you full control, enable validation, conditional rendering, and make testing easier. They follow React's data flow principles. Use uncontrolled components only for simple forms, file inputs, or when integrating with non-React libraries. Controlled components are the React-recommended approach for most cases.",
+      "category": "Forms",
+      "difficulty": "Intermediate",
+      "codeExample": "// Controlled\nconst [name, setName] = useState('');\n<input value={name} onChange={e => setName(e.target.value)} />\n\n// Uncontrolled\nconst inputRef = useRef();\n<input ref={inputRef} />\nconst value = inputRef.current.value;"
+    },
+    {
+      "id": 5,
+      "question": "Tell us something about useFormStatus()",
+      "answer": "useFormStatus is a React Hook (introduced in React 19) that provides status information about a form submission. It returns an object with properties like 'pending' (boolean indicating if form is submitting), 'data' (FormData being submitted), and 'method' (HTTP method). It must be called from a component that is rendered inside a <form> with an action prop. This hook is particularly useful for showing loading states, disabling submit buttons during submission, or displaying progress indicators. It works seamlessly with React Server Actions and enables building better form UX without manual state management.",
+      "category": "Forms",
+      "difficulty": "Advanced",
+      "codeExample": "function SubmitButton() {\n  const { pending } = useFormStatus();\n  \n  return (\n    <button type='submit' disabled={pending}>\n      {pending ? 'Submitting...' : 'Submit'}\n    </button>\n  );\n}"
+    }
+  ]

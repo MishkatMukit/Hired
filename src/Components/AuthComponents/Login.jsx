@@ -1,19 +1,22 @@
-import React, { use } from 'react';
+import React, { use, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../../Provider/AuthProvider';
 
 const Login = () => {
     const {loginUser, user, setUser} = use(AuthContext)
+    const [error, setError] = useState("")
     const location = useLocation()
     const navigate = useNavigate()
     const handleLogin = (e) => {
+        setError("")
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
         loginUser(email, password).then((result)=>{
+            
              setUser(result)
              navigate(location.state? location.state : "/")
-        }).catch(error=>console.log(error))
+        }).catch(()=>setError("Invalid email or password combination"))
         
     }
     return (
@@ -49,6 +52,7 @@ const Login = () => {
                                     <p className='text-accent'>Password</p>
                                     <input name='password' className='input w-full rounded-md input-bordered' type="text" placeholder='Enter Password' />
                                 </div>
+                                <p className='text-red-800/80 text-sm'>{error}</p>
                                 <Link className='text-secondary underline'>Forgot Password?</Link>
                                 <input className='btn btn-secondary shadow-none w-full my-3' type="submit" />
                                 <p className='text-center font-medium'>Don't have an account? <Link className=' font-medium text-secondary' to="/register">Register</Link></p>
