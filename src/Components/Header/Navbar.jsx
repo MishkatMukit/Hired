@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { use, useState } from 'react';
 import { Link, NavLink } from 'react-router';
 import logo from "../../assets/logo-01.png"
 import userIcon from "../../assets/user.png"
+import { AuthContext } from '../../Provider/AuthProvider';
+import LogoutModal from '../Modals/LogoutModal';
 const Navbar = () => {
+    const { user, isModalOpen, setIsModalOpen } = use(AuthContext)
+    const handleLogout=()=>{
+        setIsModalOpen(true)
+    }
     const links = <>
         <div className='flex gap-6 font-medium text-lg'>
             <NavLink className={({ isActive }) => isActive ? 'border-b-3 font-semibold text-black' : ''} to="/">Home</NavLink>
@@ -12,10 +18,8 @@ const Navbar = () => {
     </>
     return (
         <div>
-            
-  
-            <div className='shadow-sm py-2 bg-base-100'>
-                <div className="navbar max-w-[90%] mx-auto">
+            <div className='shadow-sm  bg-white fixed top-0 z-100 w-full'>
+                <div className="navbar max-w-[90%] mx-auto ">
                     <div className="navbar-start">
                         <div className="dropdown">
                             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -42,11 +46,16 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end flex gap-3">
-                        <Link><img className='w-10' src={userIcon} alt="" /></Link>
-                        <button className='btn border-2 border-secondary bg-white text-lg text-secondary font-bold'>Logout</button>
+                        <Link><img className='w-10 rounded-full' src={
+                            user ? user.photoURL : userIcon
+                        } alt="" /></Link>
+                        {
+                            user ? <button onClick={handleLogout} className='btn border-secondary border-2 shadow-none text-sm bg-white text-secondary'>Logout</button> : <Link to="/login" className='btn border-secondary border-2 shadow-none text-sm bg-white text-secondary'>Login</Link>
+                        }
                     </div>
                 </div>
             </div>
+            <LogoutModal isOpen={isModalOpen} ></LogoutModal>
         </div>
     );
 };

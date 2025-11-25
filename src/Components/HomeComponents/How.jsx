@@ -2,7 +2,7 @@ import React from 'react';
 
 const How = () => {
     return (
-        <div className='max-w-[90%] mx-auto py-10'>
+        <div className='max-w-[90%] mx-auto py-10 '>
             <div className='text-center py-5'>
                 <h1 className='text-4xl font-bold text-secondary'>How Hired Works</h1>
                 <p className='max-w-2xl mx-auto text-md font-medium text-accent'>Hired connects talented professionals with leading companies through a streamlined, efficient platform designed for both job seekers and employers.</p>

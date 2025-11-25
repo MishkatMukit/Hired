@@ -10,7 +10,7 @@ const DataProvider = ({children}) => {
         data,
         setData
     }
-    console.log(data);
+    // console.log(data);
     return (
         <DataContext.Provider value={dataInfo}>
             {
