@@ -62,7 +62,7 @@ const Register = () => {
                 />
                 {/* Your Content/Components */}
                 <div className='flex justify-center mt-16 py-16'>
-                    <div className="card bg-base-100 w-lg shrink-0 shadow-lg">
+                    <div className="card bg-base-100 w-[350px] md:w-lg shrink-0 shadow-lg">
                         <div className="card-body">
                             <h1 className='text-3xl font-bold text-center py-3'>Register your account</h1>
                             <form onSubmit={handleRegister} className='space-y-3'>

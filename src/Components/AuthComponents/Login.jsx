@@ -40,7 +40,7 @@ const Login = () => {
                 />
                 {/* Your Content/Components */}
                 <div className='flex justify-center mt-16 py-16'>
-                    <div className="card bg-base-100 w-lg shrink-0 shadow-lg">
+                    <div className="card bg-base-100 w-[350px] md:w-lg shrink-0 shadow-lg">
                         <div className="card-body">
                             <h1 className='text-3xl font-bold text-center'>Please Login</h1>
                             <form className='space-y-3' onSubmit={handleLogin}>
