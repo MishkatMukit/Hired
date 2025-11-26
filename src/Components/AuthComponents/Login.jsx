@@ -51,7 +51,7 @@ const Login = () => {
                                 </div>
                                 <div>
                                     <p className='text-accent'>Password</p>
-                                    <input name='password' className='input w-full rounded-md input-bordered' type="text" placeholder='Enter Password' />
+                                    <input name='password' className='input w-full rounded-md input-bordered' type="password" placeholder='Enter Password' />
                                 </div>
                                 <p className='text-red-800/80 text-sm'>{error}</p>
                                 <Link to="/forgetpassword" className='text-secondary underline'>Forgot Password?</Link>

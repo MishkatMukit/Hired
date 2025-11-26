@@ -14,7 +14,7 @@ const Navbar = () => {
     }
     // 
     const links = (
-  <div className="flex gap-6 font-medium text-lg relative">
+  <div className="flex flex-col md:flex-row gap-6 font-medium text-lg relative">
     {[
       { to: "/", label: "Home" },
       { to: "/blogs", label: "Blogs" },

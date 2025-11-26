@@ -83,7 +83,7 @@ const Register = () => {
                                     <input name='password' className='input w-full rounded-md input-bordered' type="text" placeholder='Enter Password' required />
 
                                 </div>
-                                <p>{error}</p>
+                                <p className='text-sm text-red-700 '>{error}</p>
                                 <input className='btn btn-secondary shadow-none w-full my-3' type="submit" value="Register" />
                                 <p className='text-center font-medium'>Already have an account? <Link to="/login" className='text-secondary'>Login</Link></p>
                             </form>
