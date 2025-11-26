@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from 'firebase/auth';
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updatePassword, updateProfile } from 'firebase/auth';
 import React, { createContext, useEffect, useState } from 'react';
 import { auth } from '../Firebase/firebase.init';
 
@@ -6,7 +6,7 @@ export const AuthContext = createContext(null)
 
 const AuthProvider = ({ children }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
-
+    const [email, setEmail] = useState("")
     const googleProvider = new GoogleAuthProvider();
     const [user, setUser] = useState(null)
     // console.log("from auth privider", user)
@@ -30,6 +30,10 @@ const AuthProvider = ({ children }) => {
     const updateUser = (updateInfo) => {
         return updateProfile(auth.currentUser, updateInfo)
     }
+    const forgetPassword = (email) => {
+        setLoading(true)
+        return sendPasswordResetEmail(auth, email)
+    }
     useEffect(() => {
         const unplug = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser);
@@ -52,7 +56,10 @@ const AuthProvider = ({ children }) => {
         updateUser,
         googleSignIn,
         isModalOpen,
-        setIsModalOpen
+        setIsModalOpen,
+        forgetPassword,
+        email, 
+        setEmail
     }
     return (
         <AuthContext.Provider value={authInfo}>

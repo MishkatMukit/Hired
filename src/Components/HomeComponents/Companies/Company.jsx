@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
+import {motion} from 'motion/react'
 
 const Company = ({ company }) => {
     return (
-        <div>
+        <div >
             <div className="w-[300px] md:w-[250px] bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-4">
                 {/* Company Logo */}
                 <div className="flex justify-center mb-4">
@@ -34,9 +35,12 @@ const Company = ({ company }) => {
                 </div>
 
                 {/* View Details Button */}
-                <Link to={`/companyDetails/${company.id}`}><button className="w-full bg-secondary hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
+                <Link to={`/companyDetails/${company.id}`}><motion.button
+                    whileHover={{scale:1.05}}
+                    whileTap={{scale:0.95}}
+                className="w-full bg-secondary hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
                     View Details
-                </button></Link>
+                </motion.button></Link>
             </div>
         </div>
     );

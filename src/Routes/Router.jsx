@@ -9,6 +9,7 @@ import Register from '../Components/AuthComponents/Register';
 import Loading from '../Components/Loading/Loading';
 import Dashboard from '../Pages/Dashboard';
 import Blogs from '../Pages/Blogs';
+import ForgetPassword from '../Components/AuthComponents/ForgetPassword';
 
 
 const router = createBrowserRouter([
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
             {
                 path: "/register",
                 element:<Register/>
+            },
+            {
+                path: "/forgetpassword",
+                element:<ForgetPassword/>
             },
             {
                 path: "/dashboard",

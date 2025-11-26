@@ -6,12 +6,14 @@ import { useLoaderData } from 'react-router';
 import { DataContext } from '../Provider/DataProvider';
 import Services from '../Components/Service/Services';
 
+
 const Home = () => {
     const {setData} = use(DataContext);
     const alldata = useLoaderData()
     useEffect(()=>{
         setData(alldata)
     },[])
+
     return (
         <div>
             <Banner/>

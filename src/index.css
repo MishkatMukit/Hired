@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui";
-
- @plugin "daisyui/theme" {
+@plugin "daisyui/theme" {
   name: "light";
   default: true;
   --color-primary: #403f3f;
@@ -10,7 +9,6 @@
   --color-base-300: #e7e7e7;
   --color-accent: #706f6f;
 }
-
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body{

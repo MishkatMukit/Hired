@@ -4,18 +4,46 @@ import logo from "../../assets/logo-01.png"
 import userIcon from "../../assets/user.png"
 import { AuthContext } from '../../Provider/AuthProvider';
 import LogoutModal from '../Modals/LogoutModal';
+import {motion} from 'motion/react'
+import { link } from 'motion/react-client';
+
 const Navbar = () => {
     const { user, isModalOpen, setIsModalOpen } = use(AuthContext)
     const handleLogout=()=>{
         setIsModalOpen(true)
     }
-    const links = <>
-        <div className='flex gap-6 font-medium text-lg'>
-            <NavLink className={({ isActive }) => isActive ? 'border-b-3 font-semibold text-black' : ''} to="/">Home</NavLink>
-            <NavLink className={({ isActive }) => isActive ? 'border-b-3 font-semibold text-black' : ''} to="/blogs">Blogs</NavLink>
-            <NavLink className={({ isActive }) => isActive ? 'border-b-3 font-semibold text-black' : ''} to="/dashboard">Dashboard</NavLink>
-        </div>
-    </>
+    // 
+    const links = (
+  <div className="flex gap-6 font-medium text-lg relative">
+    {[
+      { to: "/", label: "Home" },
+      { to: "/blogs", label: "Blogs" },
+      { to: "/dashboard", label: "Dashboard" }
+    ].map((item) => (
+      <NavLink
+        key={item.to}
+        to={item.to}
+        className="relative pb-1"
+      >
+        {({ isActive }) => (
+          <span className="relative">
+            {item.label}
+
+            {isActive && (
+              <motion.div
+                layoutId="nav-underline"
+                className="absolute left-0 right-0 h-[3px] bg-black rounded-md"
+                transition={{ type: "spring", stiffness: 600, damping: 60 }}
+              />
+            )}
+          </span>
+        )}
+      </NavLink>
+    ))}
+  </div>
+);
+
+    
     return (
         <div>
             <div className='shadow-sm  bg-white fixed top-0 z-100 w-full'>
@@ -46,7 +74,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end flex gap-3">
-                        <Link><img className='w-10 rounded-full' src={
+                        <Link to="/dashboard"><img className='w-10 h-10 object-cover rounded-full' src={
                             user ? user.photoURL : userIcon
                         } alt="" /></Link>
                         {

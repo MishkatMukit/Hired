@@ -1,24 +1,28 @@
-import React, { use, useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router';
+import React, { use } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
+import { useNavigate } from 'react-router';
+import { toast } from 'react-toastify';
 
-const Login = () => {
-    const {loginUser, user, setUser, setEmail} = use(AuthContext)
-    const [error, setError] = useState("")
-    const location = useLocation()
+const ForgetPassword = () => {
     const navigate = useNavigate()
-    const handleLogin = (e) => {
-        setError("")
-        e.preventDefault();
-        const email = e.target.email.value;
-        const password = e.target.password.value;
-        setEmail(email)
-        loginUser(email, password).then((result)=>{
-            
-             setUser(result)
-             navigate(location.state? location.state : "/")
-        }).catch(()=>setError("Invalid email or password combination"))
-        
+    const { email, forgetPassword } = use(AuthContext)
+    const handleForgetPassword = (e) => {
+        e.preventDefault()
+        const form = e.target
+        const email = form.email.value
+        forgetPassword(email).then(() => {
+                toast("A password reset link has been sent to your email!")
+                navigate("/login")
+                // console.log("Password reset email sent!");
+                // ..
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                console.log(errorCode, errorMessage);
+                // ..
+            });
+
     }
     return (
         <div>
@@ -43,20 +47,22 @@ const Login = () => {
                 <div className='flex justify-center mt-16 py-16'>
                     <div className="card bg-base-100 w-[350px] md:w-lg shrink-0 shadow-lg">
                         <div className="card-body">
-                            <h1 className='text-3xl font-bold text-center'>Please Login</h1>
-                            <form className='space-y-3' onSubmit={handleLogin}>
+                            <h1 className='text-3xl font-bold text-center'>Forget Password</h1>
+                            <form onSubmit={handleForgetPassword} className='space-y-3' >
                                 <div>
                                     <p className='text-accent'>Email</p>
+                                    <input defaultValue={email} name='email' className='input w-full rounded-md input-bordered' type="email" placeholder='Enter Email' />
+                                </div>
+                                <input type="submit" value="Send" className='btn btn-secondary shadow-none w-full' />
+                                {/* <div>
+                                    <p className='text-accent'>New Password</p>
                                     <input name='email' className='input w-full rounded-md input-bordered' type="text" placeholder='Enter Email' />
                                 </div>
                                 <div>
-                                    <p className='text-accent'>Password</p>
+                                    <p className='text-accent'>Confirm Password</p>
                                     <input name='password' className='input w-full rounded-md input-bordered' type="text" placeholder='Enter Password' />
-                                </div>
-                                <p className='text-red-800/80 text-sm'>{error}</p>
-                                <Link to="/forgetpassword" className='text-secondary underline'>Forgot Password?</Link>
-                                <input className='btn btn-secondary shadow-none w-full my-3' type="submit" />
-                                <p className='text-center font-medium'>Don't have an account? <Link className=' font-medium text-secondary' to="/register">Register</Link></p>
+                                </div> */}
+
                             </form>
                         </div>
                     </div>
@@ -67,4 +73,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default ForgetPassword;
