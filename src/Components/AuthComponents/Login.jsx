@@ -1,6 +1,7 @@
 import React, { use, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router';
 import { AuthContext } from '../../Provider/AuthProvider';
+import { Helmet } from 'react-helmet';
 
 const Login = () => {
     const {loginUser, user, setUser, setEmail} = use(AuthContext)
@@ -22,6 +23,9 @@ const Login = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Hired | Login</title>
+            </Helmet>
             <div className="min-h-screen w-full relative bg-white">
                 {/* Teal Glow Top */}
                 <div

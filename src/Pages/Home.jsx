@@ -5,6 +5,7 @@ import Companies from '../Components/HomeComponents/Companies/Companies';
 import { useLoaderData } from 'react-router';
 import { DataContext } from '../Provider/DataProvider';
 import Services from '../Components/Service/Services';
+import { Helmet } from 'react-helmet';
 
 
 const Home = () => {
@@ -16,6 +17,9 @@ const Home = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Hired | Home</title>
+            </Helmet>
             <Banner/>
             <How/>
             <Companies/>

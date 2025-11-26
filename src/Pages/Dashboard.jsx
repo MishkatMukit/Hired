@@ -3,6 +3,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 import { FiEdit } from 'react-icons/fi';
 import { div } from 'motion/react-client';
 import { MdCancel } from 'react-icons/md';
+import { Helmet } from 'react-helmet';
 
 const Dashboard = () => {
     const [isEditOpen, setIsEditOpen] = useState(false)
@@ -23,6 +24,9 @@ const Dashboard = () => {
     console.log(user);
     return (
         <div className='min-h-screen mt-24 max-w-[90%] mx-auto relative'>
+            <Helmet>
+                <title>Hired | Dashboard</title>
+            </Helmet>
             <div>
                 <div className='flex flex-col md:flex-row items-center gap-6  p-10 rounded-xl border border-secondary/20 shadow-sm'>
                     <img className='w-40 h-40 object-cover rounded-full' src={user?.photoURL} alt="" />

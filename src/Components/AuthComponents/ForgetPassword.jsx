@@ -2,6 +2,8 @@ import React, { use } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { useNavigate } from 'react-router';
 import { toast } from 'react-toastify';
+import { Helmet } from 'react-helmet';
+import { RiEmotionSadLine } from 'react-icons/ri';
 
 const ForgetPassword = () => {
     const navigate = useNavigate()
@@ -26,6 +28,9 @@ const ForgetPassword = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Hired | Forgot</title>
+            </Helmet>
             <div className="min-h-screen w-full relative bg-white">
                 {/* Teal Glow Top */}
                 <div

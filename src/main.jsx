@@ -7,14 +7,20 @@ import DataProvider from './Provider/DataProvider.jsx'
 import AuthProvider from './Provider/AuthProvider.jsx'
 import LogoutModal from './Components/Modals/LogoutModal.jsx'
 import { ToastContainer } from 'react-toastify'
+import { HelmetProvider } from 'react-helmet-async'
 
 createRoot(document.getElementById('root')).render(
+
   <StrictMode>
-    <AuthProvider>
-      <DataProvider>
-        <RouterProvider router={Router} />
-        <ToastContainer />
-      </DataProvider>
-    </AuthProvider>
+    <HelmetProvider>
+      <AuthProvider>
+        <DataProvider>
+
+          <RouterProvider router={Router} />
+          <ToastContainer />
+
+        </DataProvider>
+      </AuthProvider>
+    </HelmetProvider>
   </StrictMode>,
 )

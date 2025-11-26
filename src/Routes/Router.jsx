@@ -10,48 +10,58 @@ import Loading from '../Components/Loading/Loading';
 import Dashboard from '../Pages/Dashboard';
 import Blogs from '../Pages/Blogs';
 import ForgetPassword from '../Components/AuthComponents/ForgetPassword';
+import Error from '../Components/Error/Error';
 
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <HomeLayout/>,
-        children:[
+        element: <HomeLayout />,
+        children: [
             {
-                index:true,
-                path:'/',
-                element: <Home/>,
-                loader: ()=> fetch("/companies.json"),
+                index: true,
+                path: '/',
+                element: <Home />,
+                loader: () => fetch("/companies.json"),
                 hydrateFallbackElement: <Loading></Loading>
             },
             {
-                path:"/blogs",
-                element: <Blogs/>,
-                loader: ()=>fetch("/blogs.json")
+                path: "/blogs",
+                element: <Blogs />,
+                loader: () => fetch("/blogs.json")
             },
             {
-                path:"/companyDetails/:id",
-                element: <PrivateRoute><CompanyDetails/></PrivateRoute>,
-                loader: ()=> fetch("/companies.json"),
+                path: "/companyDetails/:id",
+                element: <PrivateRoute><CompanyDetails /></PrivateRoute>,
+                loader: () => fetch("/companies.json"),
                 hydrateFallbackElement: <Loading></Loading>
             },
             {
                 path: "/login",
-                element:<Login/>
+                element: <Login />
             },
             {
                 path: "/register",
-                element:<Register/>
+                element: <Register />
             },
             {
                 path: "/forgetpassword",
-                element:<ForgetPassword/>
+                element: <ForgetPassword />
             },
             {
                 path: "/dashboard",
-                element: <PrivateRoute><Dashboard/></PrivateRoute>
+                element: <PrivateRoute><Dashboard /></PrivateRoute>
+            },
+            {
+                path: '/*',
+                element: <Error />
             }
+
         ]
+    },
+    {
+        path: '*',
+        element: <Error />
     }
 ])
 

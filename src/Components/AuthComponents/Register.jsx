@@ -1,6 +1,7 @@
 import { use, useState } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
 import { Link, Navigate, useNavigate, useNavigation } from 'react-router';
+import { Helmet } from 'react-helmet';
 
 const Register = () => {
     const [error, setError] = useState("")
@@ -43,6 +44,9 @@ const Register = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Hired | Register</title>
+            </Helmet>
             <div className="min-h-screen w-full relative bg-white">
                 {/* Teal Glow Top */}
                 <div
