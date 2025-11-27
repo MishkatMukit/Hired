@@ -1,9 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router';
 
 const Error = () => {
     return (
         <div className='flex flex-col text-center items-center justify-center h-screen'>
+            <Helmet>
+                <title>Hired | Error</title>
+            </Helmet>
             <div>
                 <img className='max-w-[400px]' src="https://i.postimg.cc/MpTf5R4n/error.png" alt="" />
             </div>
