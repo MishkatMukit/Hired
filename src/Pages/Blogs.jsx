@@ -1,11 +1,12 @@
 import React from 'react';
-import { useLoaderData } from 'react-router';
+import { ScrollRestoration, useLoaderData } from 'react-router';
 import Blog from '../Components/Blog/Blog';
 import { Helmet } from 'react-helmet';
 const Blogs = () => {
     const blogs = useLoaderData()
     return (
         <div className='max-w-[90%] mx-auto mt-16'>
+            <ScrollRestoration />
             <Helmet>
                 <title>Hired | Blogs</title>
             </Helmet>

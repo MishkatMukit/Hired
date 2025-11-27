@@ -1,9 +1,9 @@
 import React, { use, useState } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 import { FiEdit } from 'react-icons/fi';
-import { div } from 'motion/react-client';
 import { MdCancel } from 'react-icons/md';
 import { Helmet } from 'react-helmet';
+import { ScrollRestoration } from 'react-router';
 
 const Dashboard = () => {
     const [isEditOpen, setIsEditOpen] = useState(false)
@@ -24,6 +24,7 @@ const Dashboard = () => {
     console.log(user);
     return (
         <div className='min-h-screen mt-24 max-w-[90%] mx-auto relative'>
+            <ScrollRestoration/>
             <Helmet>
                 <title>Hired | Dashboard</title>
             </Helmet>

@@ -2,7 +2,7 @@ import React, { use, useEffect } from 'react';
 import Banner from '../Components/Banner/Banner';
 import How from '../Components/HomeComponents/How';
 import Companies from '../Components/HomeComponents/Companies/Companies';
-import { useLoaderData } from 'react-router';
+import { ScrollRestoration, useLoaderData } from 'react-router';
 import { DataContext } from '../Provider/DataProvider';
 import Services from '../Components/Service/Services';
 import { Helmet } from 'react-helmet';
@@ -17,6 +17,7 @@ const Home = () => {
 
     return (
         <div>
+            <ScrollRestoration />
             <Helmet>
                 <title>Hired | Home</title>
             </Helmet>

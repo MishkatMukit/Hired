@@ -1,5 +1,5 @@
 import Job from '../Components/DetailsComp/Job';
-import { useLoaderData, useParams } from 'react-router';
+import { ScrollRestoration, useLoaderData, useParams } from 'react-router';
 import { DataContext } from '../Provider/DataProvider';
 import { useEffect, useState } from 'react';
 import { FaMapLocationDot, FaTags } from 'react-icons/fa6';
@@ -19,6 +19,7 @@ const CompanyDetails = () => {
 
     return (
         <div className="min-h-screen w-full relative">
+            <ScrollRestoration />
             {/* Teal Glow Left */}
             <div
                 className="absolute inset-0 -z-1"
