@@ -1,6 +1,7 @@
-import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updatePassword, updateProfile } from 'firebase/auth';
+import { createUserWithEmailAndPassword, GithubAuthProvider, GoogleAuthProvider, onAuthStateChanged, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, signOut, updatePassword, updateProfile } from 'firebase/auth';
 import React, { createContext, useEffect, useState } from 'react';
 import { auth } from '../Firebase/firebase.init';
+
 
 export const AuthContext = createContext(null)
 
@@ -8,6 +9,7 @@ const AuthProvider = ({ children }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [email, setEmail] = useState("")
     const googleProvider = new GoogleAuthProvider();
+    const githubProvider = new GithubAuthProvider();
     const [user, setUser] = useState(null)
     // console.log("from auth privider", user)
     const [loading, setLoading] = useState(true)
@@ -17,7 +19,7 @@ const AuthProvider = ({ children }) => {
 
     }
     const googleSignIn = () => { return signInWithPopup(auth, googleProvider) }
-
+    const githubSignIn = () => { return  signInWithPopup(auth, githubProvider)}
     const loginUser = (email, password) => {
         setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
@@ -55,6 +57,7 @@ const AuthProvider = ({ children }) => {
         setLoading,
         updateUser,
         googleSignIn,
+        githubSignIn,
         isModalOpen,
         setIsModalOpen,
         forgetPassword,
