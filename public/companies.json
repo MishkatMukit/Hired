@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Google",
-    "logo": "https://logo.clearbit.com/google.com",
+    "logo": "https://i.postimg.cc/JnX3fWCF/google.png",
     "location": "Mountain View, California, USA",
     "website": "https://google.com",
     "industry": "Technology & Search",
@@ -60,7 +60,7 @@
   {
     "id": "2",
     "name": "Microsoft",
-    "logo": "https://logo.clearbit.com/microsoft.com",
+    "logo": "https://i.postimg.cc/Y0wNkytP/microsoft.png",
     "location": "Redmond, Washington, USA",
     "website": "https://microsoft.com",
     "industry": "Software & Cloud Services",
@@ -102,7 +102,7 @@
   {
     "id": "3",
     "name": "Amazon",
-    "logo": "https://logo.clearbit.com/amazon.com",
+    "logo": "https://i.postimg.cc/hvq8g3St/social.png",
     "location": "Seattle, Washington, USA",
     "website": "https://amazon.com",
     "industry": "E-commerce & Cloud Computing",
@@ -176,7 +176,7 @@
   {
     "id": "4",
     "name": "Meta",
-    "logo": "https://logo.clearbit.com/meta.com",
+    "logo": "https://i.postimg.cc/4dcvDTRj/meta.png",
     "location": "Menlo Park, California, USA",
     "website": "https://meta.com",
     "industry": "Social Media & Technology",
@@ -218,7 +218,7 @@
   {
     "id": "5",
     "name": "Netflix",
-    "logo": "https://logo.clearbit.com/netflix.com",
+    "logo": "https://i.postimg.cc/zv1w5Pq9/netflix.png",
     "location": "Los Gatos, California, USA",
     "website": "https://netflix.com",
     "industry": "Entertainment & Streaming",
@@ -276,7 +276,7 @@
   {
     "id": "6",
     "name": "Apple",
-    "logo": "https://logo.clearbit.com/apple.com",
+    "logo": "https://i.postimg.cc/LXPkcMF7/apple.png",
     "location": "Cupertino, California, USA",
     "website": "https://apple.com",
     "industry": "Consumer Electronics & Software",
@@ -318,7 +318,7 @@
   {
     "id": "7",
     "name": "Spotify",
-    "logo": "https://logo.clearbit.com/spotify.com",
+    "logo": "https://i.postimg.cc/6qNVw19T/spotify.png",
     "location": "Stockholm, Sweden",
     "website": "https://spotify.com",
     "industry": "Music Streaming",
@@ -344,7 +344,7 @@
   {
     "id": "8",
     "name": "Adobe",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8E8-LWb6mIZKC4cy4IUY1UlF6KxTguZcx4A&s",
+    "logo": "https://i.postimg.cc/6QgLbpgY/adobe.png",
     "location": "San Jose, California, USA",
     "website": "https://adobe.com",
     "industry": "Creative Software",
@@ -402,7 +402,7 @@
   {
     "id": "9",
     "name": "Airbnb",
-    "logo": "https://logo.clearbit.com/airbnb.com",
+    "logo": "https://i.postimg.cc/TwbjzXvF/airbnb.png",
     "location": "San Francisco, California, USA",
     "website": "https://airbnb.com",
     "industry": "Travel & Hospitality",
@@ -444,7 +444,7 @@
   {
     "id": "10",
     "name": "Slack",
-    "logo": "https://logo.clearbit.com/slack.com",
+    "logo": "https://i.postimg.cc/Vvc91HYf/slack.png",
     "location": "San Francisco, California, USA",
     "website": "https://slack.com",
     "industry": "Communication & Collaboration",
@@ -502,7 +502,7 @@
   {
     "id": "11",
     "name": "Shopify",
-    "logo": "https://logo.clearbit.com/shopify.com",
+    "logo": "https://i.postimg.cc/gjPydBYF/shopify.png",
     "location": "Ottawa, Ontario, Canada",
     "website": "https://shopify.com",
     "industry": "E-commerce Platform",
@@ -544,7 +544,7 @@
   {
     "id": "12",
     "name": "Salesforce",
-    "logo": "https://logo.clearbit.com/salesforce.com",
+    "logo": "https://i.postimg.cc/d3KRvSqF/salesforce.png",
     "location": "San Francisco, California, USA",
     "website": "https://salesforce.com",
     "industry": "CRM & Enterprise Software",
