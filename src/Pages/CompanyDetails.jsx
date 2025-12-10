@@ -4,7 +4,7 @@ import { DataContext } from '../Provider/DataProvider';
 import { useEffect, useState } from 'react';
 import { FaMapLocationDot, FaTags } from 'react-icons/fa6';
 import { MdOutlineSupportAgent } from 'react-icons/md';
-
+import { easeIn, easeInOut, motion } from 'motion/react'
 const CompanyDetails = () => {
     const { id } = useParams()
     const data = useLoaderData()
@@ -41,7 +41,12 @@ const CompanyDetails = () => {
                 <div className="max-w-6xl mx-auto">
 
                     {/* --- Section 1: Company Profile Header --- */}
-                    <div className="bg-white rounded-2xl shadow-sm p-6 mb-10 flex flex-col md:flex-row items-center md:items-start gap-6 border border-gray-100">
+                    <motion.div
+                        initial={{opacity:0, y:-50}}
+                        animate={{opacity:1, y:0}}
+                        transition={{duration:0.5}}
+
+                    className="bg-white rounded-2xl shadow-sm p-6 mb-10 flex flex-col md:flex-row items-center md:items-start gap-6 border border-gray-100">
                         <div className="w-24 h-24 flex-shrink-0 bg-gray-50 rounded-full p-2 border border-gray-200">
                             <img
                                 src={companyData.logo}
@@ -72,19 +77,22 @@ const CompanyDetails = () => {
                                 Visit Website
                             </a>
                         </div>
-                    </div>
+                    </motion.div>
                     {/* --- Section 2: Jobs Grid (Separate Items) --- */}
                     <div className="mb-6 relative z-1">
                         <h2 className="text-xl font-semibold text-gray-800 mb-6">
                             Available Positions ({companyData.jobs?.length})
                         </h2>
 
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <motion.div
+                        
+                        
+                        className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                             {
                                 companyData.jobs?.map((job) => (
                                     <Job key={job.id} job={job}></Job>
                                 ))}
-                        </div>
+                        </motion.div>
                     </div>
 
                 </div>'

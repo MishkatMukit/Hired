@@ -5,7 +5,10 @@ import {motion} from 'motion/react'
 const Company = ({ company }) => {
     return (
         <div >
-            <div className="w-[300px] md:w-[250px] bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-4">
+            <motion.div
+                whileHover={{y:-10, scale:1.0005}}
+                animate={{y:0, scale:0.94}}
+            className="w-[300px] md:w-[250px] bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-4">
                 {/* Company Logo */}
                 <div className="flex justify-center mb-4">
                     <img
@@ -41,7 +44,7 @@ const Company = ({ company }) => {
                 className="w-full bg-secondary hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
                     View Details
                 </motion.button></Link>
-            </div>
+            </motion.div>
         </div>
     );
 };

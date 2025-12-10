@@ -9,13 +9,9 @@ const Error = () => {
                 <title>Hired | Error</title>
             </Helmet>
             <div>
-                <img className='max-w-[400px]' src="https://i.postimg.cc/MpTf5R4n/error.png" alt="" />
+                <img className='rounded-xl max-w-2xl' src="https://i.postimg.cc/c4YjHSsr/404-c.png" alt="" />
             </div>
-            <div className='space-y-3'>
-                <div>
-                    <h1 className='text-6xl font-extrabold'>404 Error</h1>
-                <h3 className='font-medium text-3xl'>Oops! The doctor is not around.</h3>
-                </div>
+            <div className='space-y-3 p-5'>
                 <div className='text-md font-medium text-[#00000090]'>
                     <p>We tried but couldn't find the page you are looking for.</p>
                     <p>We want to help you the best we can. You are invited to our homepage</p>
